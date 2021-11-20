@@ -1,0 +1,30 @@
+[
+    {
+        "eid": 1,
+        "ename": "Deeps",
+        "email": "deeps@gmail.com",
+        "password": "pass",
+        "gender": "Female"
+      },
+      {
+        "eid": 2,
+        "ename": "Shraddha",
+        "email": "shr@gmail.com",
+        "password": "pass",
+        "gender": "Female"
+      },
+      {
+        "eid": 3,
+        "ename": "Rahul",
+        "email": "rahul@gmail.com",
+        "password": "pass",
+        "gender": "Male"
+      },
+      {
+        "eid": 4,
+        "ename": "Arun",
+        "email": "arun@gmail.com",
+        "password": "pass",
+        "gender": "Male"
+      }
+]

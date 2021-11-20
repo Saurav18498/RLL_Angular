@@ -1,0 +1,112 @@
+<div class="collapse" id="navbarToggleExternalContent">
+  <div class="bg-dark p-4">
+    <h5 class="text-white h4">
+
+
+
+      <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+
+
+
+
+
+
+    </h5>
+    <span class="text-muted"> <a class="nav-link active" aria-current="page" href="#">Logout</a>
+      <a class="nav-link active" aria-current="page" href="#">Edit Profile</a></span>
+  </div>
+</div>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent"
+      aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"> </span>
+    </button>
+  </div>
+
+</nav>
+
+
+<div class="card bg-dark text-white">
+  <img src="https://www.asia-bars.com/wp-content/uploads/2012/07/canteen-plaza-indonesia002.jpg" class="card-img"
+    alt="...">
+  <div class="card-img-overlay">
+
+    <h5><app-cart [item] = 'item_list' [itemquantity] = 'no_of_items'></app-cart></h5>
+
+    <div class="card-img-overlay">
+    <h3>Menu List</h3>
+    <h1> <input type="hidden" name="on0" value="Color">
+      <h2><label for="os0">Items:  </label></h2>
+      <input type="text" [(ngModel)]="item_list" name="city" list="citynames">
+      <datalist id="citynames">
+        <option value="Biryani">
+        <option value="Tandoori Chicken Butter Masala">
+        <option value="{{test}}"></option>
+      </datalist>
+      <br>
+      <!-- Provide a drop-down menu option field with prices. -->
+      <input type="hidden" name="on1" value="Size">
+      <h2><label for="os1">Quantity: </label></h2>
+      <input type="text" [(ngModel)]="no_of_items" name="quantity" list="quantity">
+      <datalist id="quantity">
+        <option value="1">
+        <option value="2">
+        <option value="3">
+        <option value="4">
+        <option value="5">
+        <option value="6">
+        <option value="7">
+        <option value="8">
+      </datalist>
+
+      <br>
+
+      <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+        alt="Add to Cart">
+      <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"><br><br><br>
+
+
+      <button style="background-color:rgb(87, 182, 206); border-color:rgb(160, 160, 235); color:rgb(248, 232, 232)"
+      type="button" (click)="process()" class="btn btn-primary btn-lg">Proceed</button>
+
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <h4>Available Items</h4>
+      <h4>
+        <ul *ngFor="let i of menu">
+          <li>{{i.food_name }}: {{i.food_price}}: {{i.food_availabilty}}
+
+          </li>
+
+        </ul>
+
+
+      
+
+
+      </h4>
+
+    </h1>
+
+  </div>
+</div>
+</div>
+
+<h4>
+  <ul *ngFor="let i of menu">
+    <li>{{i.food_name }}: {{i.food_price}}: {{i.food_availabilty}}
+
+    </li>
+
+  </ul>
+  
+</h4>
+
+
+

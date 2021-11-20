@@ -1,0 +1,16 @@
+
+<button type="button" (click)="onclick()" class="btn btn-primary btn-lg" >Customer Details</button>
+<br><br><br>
+<h4>
+<ul *ngFor = "let emp of cse">
+  <li>{{emp.id }}.) {{emp.name}} => {{emp.Nid}}</li>
+  
+</ul></h4>
+
+<label for="name">Enter Name:</label>
+
+    <input type="text" [(ngModel)]="check1"  id="name" name="name">
+
+<p>{{check1}}</p>
+
+
